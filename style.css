@@ -193,24 +193,23 @@ footer {
 .dark footer {
   background: #000;
 }
-
-@media (max-width: 950px) {
+@media (max-width: 500px) {
   section {
-    padding: 4rem 4vw;
+    padding: 2rem 3vw; 
   }
 }
-
 @media (max-width: 500px) {
   header {
-    padding: 2.5rem 3vw;
+    padding: 1.5rem 3vw;
+    height: auto;
   }
 
   section {
-    padding: 3rem 4vw;
+    padding: 2rem 3vw;
   }
 
   header button {
     position: static;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }
