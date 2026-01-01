@@ -193,12 +193,12 @@ footer {
 .dark footer {
   background: #000;
 }
-@media (max-width: 500px) {
+@media (max-width: 300px) {
   section {
     padding: 2rem 3vw; 
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 200px) {
   header {
     padding: 1.5rem 3vw;
     height: auto;
