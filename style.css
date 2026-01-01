@@ -202,6 +202,7 @@ footer {
   header {
     padding: 1.5rem 3vw;
     height: auto;
+    background-color: red;
   }
 
   section {
