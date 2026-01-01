@@ -201,7 +201,8 @@ footer {
 @media (max-width: 200px) {
   header {
     padding: 1rem 2vw;
-    margin-bottom: 30px 
+    margin-bottom: 6rem;
+    width: 100px;
   }
 
   section {
