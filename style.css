@@ -1,12 +1,12 @@
 * {
-  margin: 0;
+  margin: 3px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 90vh;
   background: linear-gradient(135deg, #8e92b4, #bc9ba3);
   color: #fff;
   overflow-x: hidden;
@@ -15,7 +15,7 @@ body {
 
 header {
   width: 100%;
-  min-height: 35vh;
+  min-height: 30vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     linear-gradient(135deg, #667eea, #764ba2);
@@ -25,7 +25,7 @@ header {
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 3rem 6vw;
+  padding: 3rem 5vw;
 }
 
 header h1 {
@@ -42,7 +42,7 @@ header p {
 header button {
   position: absolute;
   top: 20px;
-  right: 25px;
+  right: 70px;
   background: rgba(255, 255, 255, 0.85);
   color: #333;
   border: none;
@@ -58,7 +58,12 @@ header button:hover {
   background: #ffdd57;
   transform: scale(1.08);
 }
-
+header:hover{
+   
+        box-shadow: 0 0 10px 5px rgb(116, 134, 234);
+  
+  
+}
 nav {
   width: 100%;
   background: rgba(0, 0, 0, 0.35);
@@ -99,8 +104,8 @@ nav a:hover {
 
 section {
   width: 95%;
-  min-height: 50vh;
-  padding: 5rem 8vw;
+  min-height: 40vh;
+  padding: 4rem 7vw;
   margin: auto;
     background: linear-gradient(135deg, #1d2671, #c33764);
   backdrop-filter: blur(12px);
@@ -121,18 +126,34 @@ section h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+section h4 {
+  font-size: clamp(1.7rem,2vw, 1.4rem);
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #ffdd57, #ff512f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 section p,
 section li {
   font-size: clamp(1rem, 1.5vw, 1.15rem);
   line-height: 1.8;
   margin-bottom: 15px;
   color: #f1f1f1;
+  
 }
  section:hover{
       transform: translateY(-8px);
-      box-shadow: 0 15px 30px rgba(188, 177, 177, 0.15);
+        box-shadow: 0 0 10px 5px rgb(116, 134, 234);
     }
+section p{
+  background: linear-gradient(90deg,#f47b63,  #f3dd88);
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding-left: 40px;
+  padding-right: 20px;
+  width: 50%;  
+  color: #423f3f;
+}
 
 .skill-box {
   display: inline-flex;
@@ -148,14 +169,43 @@ section li {
   transition: all 0.4s ease;
 }
 
-@media (hover: hover) {
-  .skill-box:hover {
+form input {
+  padding: 8px;
+  width: 220px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: #d3afaf;
+}
+
+form button {
+  padding: 8px 15px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: #ab89c3;
+}
+form :hover{
+  box-shadow: 0 0 20px 10px rgb(89, 186, 54);
+}
+
+form ::placeholder {
+  color: #363535;
+}
+.skill-box:hover {
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     color: #222;
     transform: scale(1.12);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   }
-}
+  section p:hover {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #222;
+    transform: scale(1.12);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  }
 
 footer {
   width: 100%;
@@ -163,6 +213,7 @@ footer {
   background: rgba(0, 0, 0, 0.6);
   text-align: center;
   font-size: 0.9rem;
+  margin-bottom: 20px;
   
 }
 
@@ -193,24 +244,24 @@ footer {
 .dark footer {
   background: #000;
 }
-
-@media (max-width: 992px) {
+@media (max-width: 300px) {
   section {
-    padding: 4rem 6vw;
+    padding: 1rem 2vw; 
   }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 200px) {
   header {
-    padding: 2.5rem 5vw;
+    padding: 1rem 2vw;
+    margin-bottom: 6rem;
+    width: 100px;
   }
 
   section {
-    padding: 3rem 5vw;
+    padding: 2rem 3vw;
   }
 
   header button {
     position: static;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }
