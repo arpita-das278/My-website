@@ -15,7 +15,11 @@ body {
 
 header {
   width: 100%;
+<<<<<<< HEAD
   min-height: 30vh;
+=======
+  min-height: 20vh;
+>>>>>>> 69d47872d3fa533fb065e4222fbe55d5c8b37481
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     linear-gradient(135deg, #667eea, #764ba2);
@@ -25,7 +29,11 @@ header {
   align-items: center;
   text-align: center;
   position: relative;
+<<<<<<< HEAD
   padding: 3rem 5vw;
+=======
+  padding: 2rem 4vw;
+>>>>>>> 69d47872d3fa533fb065e4222fbe55d5c8b37481
 }
 
 header h1 {
